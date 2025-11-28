@@ -25,7 +25,7 @@ while [[ $# -gt 0 ]]; do
             echo "  -h, --help               Show this help message"
             echo ""
             echo "Available packs:"
-            ls -1 resource/ 2>/dev/null || echo "  (none found)"
+            ls -1 resource-pack 2>/dev/null || echo "  (none found)"
             exit 0
             ;;
         *)
@@ -41,16 +41,16 @@ if [ -z "$PACK_NAME" ]; then
     echo "Usage: $0 --pack-name <name> [--install-dir <directory>]"
     echo ""
     echo "Available packs:"
-    ls -1 resource/ 2>/dev/null || echo "  (none found)"
+    ls -1 resource-pack 2>/dev/null || echo "  (none found)"
     exit 1
 fi
 
-PACK_DIR="resource/$PACK_NAME"
+PACK_DIR="resource-pack/$PACK_NAME"
 
 if [ ! -d "$PACK_DIR" ]; then
-    echo "Error: Pack '$PACK_NAME' not found in resource/ directory"
+    echo "Error: Pack '$PACK_NAME' not found in resource-pack directory"
     echo "Available packs:"
-    ls -1 resource/
+    ls -1 resource-pack
     exit 1
 fi
 

@@ -4,7 +4,7 @@
 		"min_format": 34,
 		"max_format": 69,
 		"supported_formats": {"min_inclusive": 34, "max_inclusive": 69},
-		"title": "Donkey Variations"
+		"title": "Donkey Variations",
         "description": "Adds color and pattern variation to donkey textures."
     },
 	"overlays": {
